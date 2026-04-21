@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/perfil.jpg" alt="Foto de Perfil" class="avatar">
+        <h1>Lucas Silva</h1>
+        <p class="bio">Estudante de Multimédia & Designer</p>
+    </header>
+
+    <main class="links-container">
+        <a href="https://www.behance.net/teu-utilizador" target="_blank" class="btn">Meu Portfólio</a>
+        <a href="https://instagram.com/teu-utilizador" target="_blank" class="btn">Instagram</a>
+        <a href="https://linkedin.com/teu-utilizador" target="_blank" class="btn">LinkedIn</a>
+        <a href="mailto:email@exemplo.com" class="btn">Contacto</a>
+    </main>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+            .then(() => console.log("App pronta para uso!"));
+        }
+    </script>
+</body>
+</html>
